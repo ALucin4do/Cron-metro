@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/preset.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/aside.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="#stopwatch" >Cronômetro </a></li>
+                <li> <a href="#timer">Temporizador</a></li>
+                <li> <a href="#pomodoro">Pomodoro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <body>
+        <main>
+
+            <section id="stopwatch">
+                <h1>Cronômetro</h1>
+                <div>
+                    <span>00:00:00</span>
+                </div>
+                <div>
+                    <button>Iniciar/parar</button>
+                    <button>Marcar</button>
+                    <button>Zerar</button>
+                </div>
+            </section>
+
+            <section id="timer">
+                <h1>Temporizador</h1>
+                <div>
+                    <input type="time">
+                </div>
+                <div>
+                    <button>Iniciar</button>
+                    <button>Parar</button>
+                    <button>Zerar</button>
+                </div>
+            </section>
+
+            <section id="pomodoro">
+                <h1>Pomodoro</h1>
+                <div>
+                    <span>25:00</span>
+                </div>
+                <div>
+                    <button>Iniciar</button>
+                    <button>Parar</button>
+                    <button>Zerar</button>
+                </div>
+            </section>
+            
+        </main>
+
+        <aside>
+            <h2>escolha seu tema</h2>
+
+            <div>
+                <ul>
+                    <li><button class="btn-theme" id="theme1"></button></li>
+                    <li><button class="btn-theme" id="theme2"></button></li>
+                    <li><button class="btn-theme" id="theme3"></button></li>
+                    <li><button class="btn-theme" id="theme4"></button></li>
+                    <li><button class="btn-theme" id="theme5"></button></li>
+                    <li><button class="btn-theme" id="theme6"></button></li>
+                    <li><button class="btn-theme" id="theme7"></button></li>
+                    <li><button class="btn-theme" id="theme8"></button></li>
+                </ul>
+            </div>
+        </aside>
+
+
+        <script src="code/stopwatch.js"></script>
+    </body>
+</body>
+</html>
