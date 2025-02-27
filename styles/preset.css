@@ -1,3 +1,7 @@
+
+
+
+
 :root{
 
     font-size: 62.5%;
@@ -14,10 +18,20 @@
 		--large-desktop: 1440px;
 
 /* temas */
-    --theme1: #f5f5f5;
-    --text-theme1: #333;
-    --border-theme1: #ccc;
 
+    /* tema 1 */
+    --bg-theme1 : #0e0c14;
+    --header-theme1 : #3A0CA3;
+    --header-text-theme1 : #ddf8f5;
+    --header-active-theme1 : #05F2D2;
+
+    --watch-bg-theme1 : #242E4E;
+    --Watch-border-theme1 : #F72585;
+    --watch-numbers-theme1 : #ffd500;
+
+    --button-bg-theme1 : #7209b7;
+    --button-text-theme1 : #4cc9f0;
+    /* tema 2 */
     --theme2: #f0f0f0;
     --text-theme2: #333;
     --border-theme2: #ccc;
@@ -47,14 +61,26 @@
     --border-theme8: #ccc;
 
 /* atribuição do tema incial */
-    --theme : var(--theme1);
-    --text-theme : var(--text-theme1);
-    --border-theme : var(--border-theme1);
+    --bg : var(--bg-theme1);
+    --header : var(--header-theme1);
+    --header-text : var(--header-text-theme1);
+    --header-active : var(--header-active-theme1);
+
+    --watch-bg : var(--watch-bg-theme1);
+    --Watch-border : var(--Watch-border-theme1);
+    --watch-numbers: var(--watch-numbers-theme1);
+
+    --button-bg : var(--button-bg-theme1);
+    --button-text : var(--button-text-theme1);
+
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
 }
 
 section{
-    height: 100vh;
-    width: 100vw;
     display: none;
     z-index: 1;
     overflow: hidden;
@@ -80,7 +106,7 @@ button{
     text-transform: uppercase;
     
     &:hover, &:focus{
-        transform: translate(-5px, -5px);
+        transform: translate(-3px, -5px);
         box-shadow: 0 5px 10px var(--border-theme);
         outline: none;
     }
