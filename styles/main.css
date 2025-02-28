@@ -93,3 +93,44 @@ section .group-btn button img{
     height: 30px;
 }
 
+
+#time-flag {
+    position: absolute;
+    left: 50px;
+    top:300px;
+    display: none ;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    color: #cccccc;
+    max-height: 50px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+#time-flag::-webkit-scrollbar {
+    width: 10px;
+}
+
+#time-flag::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 8px;
+}
+
+#time-flag::-webkit-scrollbar-thumb{
+    background-color: #cccccc;
+    border-radius: 15px;
+    opacity: .75;
+
+    &:hover{
+        opacity: 1;
+    }   
+}
+
+
+
+
+
+
