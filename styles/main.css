@@ -1,5 +1,5 @@
 body{
-    background-color: var(--bg);
+    background:linear-gradient(45deg, var(--header), var(--bg));
 }
 
 main{
@@ -16,7 +16,11 @@ section{
     justify-content: space-between;
     gap: 5rem;
     font-size: 3.6rem;
+
+ 
 }
+
+
 
 section h1{
     font-size: 2em ;
@@ -24,15 +28,39 @@ section h1{
 }
 
 section .circle{
-    border-radius: 50%;
+    --circle-size: 250px;
+    position: relative;
     background-color: var(--watch-bg);
-    border: 5px solid var(--Watch-border);
-    width: 250px;
-    height: 250px;
+    width: var(--circle-size);
+    height: var(--circle-size);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        width: calc(var(--circle-size) + 10px);
+        height: calc(var(--circle-size) + 10px);
+        z-index: -1;
+        background: linear-gradient(45deg, var(--Watch-border), var(--bg));
+        animation: rotateBorder 10s linear infinite;
+    }
+    
+    &::after{
+        filter: blur(30px);
+    }
+}
+
+@keyframes rotateBorder{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 section .circle span{
@@ -64,3 +92,4 @@ section .group-btn button img{
     width: 30px;
     height: 30px;
 }
+
