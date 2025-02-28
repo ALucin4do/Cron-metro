@@ -46,7 +46,7 @@ section .circle{
         height: calc(var(--circle-size) + 10px);
         z-index: -1;
         background: linear-gradient(45deg, var(--Watch-border), var(--bg));
-        animation: rotateBorder 10s linear infinite;
+        animation: rotateGlowBorder 10s linear infinite;
     }
     
     &::after{
@@ -54,12 +54,19 @@ section .circle{
     }
 }
 
-@keyframes rotateBorder{
-    0%{
+@keyframes rotateGlowBorder {
+    0% {
         transform: rotate(0deg);
+        filter: blur(5px); /* Adiciona blur inicial */
     }
-    100%{
+    50% {
+        transform: rotate(180deg);
+        filter: blur(30px); /* Adiciona blur máximo no meio */
+    }
+    100% {
         transform: rotate(360deg);
+        filter: blur(5px); /* Retorna ao blur inicial */
+
     }
 }
 

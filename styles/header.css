@@ -24,15 +24,14 @@ header nav ul{
 header nav ul a{
     color: var(--header-text);
     padding: 1rem;
+    margin: 1rem;
+    border-bottom: 2px solid transparent;
     cursor: pointer;
     transition: all 300ms;
     outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
     text-transform: uppercase;
     letter-spacing: .15rem;
+    
 
     &:hover, &:focus{
         border-bottom: 2px solid var(--header-active);
