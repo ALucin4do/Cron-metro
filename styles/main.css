@@ -53,6 +53,11 @@ section .group-btn button{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:active{
+        transform: none;
+        box-shadow: none
+    }
 }
 
 section .group-btn button img{

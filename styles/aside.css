@@ -1,23 +1,24 @@
 aside{
     z-index: 2;
     position: absolute;
-    right: -400px;
+    right: -250px;
     top: 150px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    padding: 25px;
+    padding: 10px 25px 25px;
     transition: all 500ms ease-in-out;
+    font-size: 1.6rem;
 }
 
 aside h2{
     display: block;
-    font-size: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.9);
     margin: 10px;
     padding: 10px 20px;
+    font-size: 1.5em;
 }
 
 aside h2 img{
@@ -32,8 +33,7 @@ aside >button{
     position: absolute;
     top: 50%;
     left: -65px;
-    transition: transform 200ms ease-in-out;
-    transition: background-color 600ms ease-in-out;
+    transition: all 600ms ease-in-out;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -55,14 +55,28 @@ aside >button img{
 aside ul{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
-    gap: 16px;
+    gap: 4px;
     background-color: rgba(255, 255, 255, 0.4);
     padding: 16px;
     border-radius: 12px;
 }
 
+aside ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: capitalize;
+    
+
+}
+
 aside ul li .btn-theme{
-    width: 250px;
+    width: 60px;
+    margin-right: 20px;
 }

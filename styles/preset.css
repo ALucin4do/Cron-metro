@@ -97,16 +97,14 @@ button{
     text-transform: uppercase;
     border: none;
     
-    &:hover, &:focus{
+    &:hover, &:focus,  &:active{
         transform: translate(-3px, -5px);
         box-shadow: 0 5px 10px ;
         outline: none;
     }
 
-    &:active{
-        transform: translate(0);
-        box-shadow: 0 0 0 ;
-    }
+   
+
 
     &:disabled{
         background-color: darkslategray;
