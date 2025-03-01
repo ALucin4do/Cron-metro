@@ -35,6 +35,7 @@ header nav ul button{
     letter-spacing: .15rem;
     text-align: center;
     font-size: 1em;
+    transition: all 300ms ease-in-out;
 
     &:hover, &:focus{
         box-shadow: none;
