@@ -46,7 +46,7 @@ section .circle{
         height: calc(var(--circle-size) + 10px);
         z-index: -1;
         background: linear-gradient(45deg, var(--Watch-border), var(--bg));
-        animation: rotateGlowBorder 10s linear infinite;
+        animation: rotateGlowBorder 1s linear infinite;
     }
     
     &::after{
