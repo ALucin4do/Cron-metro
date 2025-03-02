@@ -38,34 +38,31 @@ section .circle{
     align-items: center;
     border-radius: 50%;
 
-    &::before, &::after{
+    &::before{
         content: '';
         position: absolute;
         border-radius: 50%;
-        width: calc(var(--circle-size) + 10px);
-        height: calc(var(--circle-size) + 10px);
+        width: calc(var(--circle-size) + 15px);
+        height: calc(var(--circle-size) + 15px);
         z-index: -1;
-        background: linear-gradient(45deg, var(--Watch-border), var(--bg));
-        animation: rotateGlowBorder 1s linear infinite;
+        background: linear-gradient(45deg, var(--Watch-border), var(--button-text));
+        animation: rotateGlowBorder 5s linear infinite;
     }
-    
-    &::after{
-        filter: blur(30px);
-    }
+
 }
 
 @keyframes rotateGlowBorder {
     0% {
         transform: rotate(0deg);
-        filter: blur(5px); /* Adiciona blur inicial */
+        filter: blur(20px); /* Adiciona blur inicial */
     }
     50% {
         transform: rotate(180deg);
-        filter: blur(30px); /* Adiciona blur máximo no meio */
+        filter: blur(5px); /* Adiciona blur máximo no meio */
     }
     100% {
         transform: rotate(360deg);
-        filter: blur(5px); /* Retorna ao blur inicial */
+        filter: blur(20px); /* Retorna ao blur inicial */
 
     }
 }

@@ -39,7 +39,16 @@ function sectionSelection(section){
         element.style.display = 'none';
     });
     section.style.display = 'flex';
-    
+
+
+    const existingScript = document.querySelector(`script[src="${section.id}.js"]`);
+    if (existingScript) {
+        return;
+    }
+
+    const sectionScript = document.createElement('script');
+    sectionScript.src = `scripts/${section.id}.js`;
+    document.body.appendChild(sectionScript);
 }
 
 navStopwatch.addEventListener('click', () => sectionSelection(stopwatch));
