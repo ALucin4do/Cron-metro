@@ -89,6 +89,7 @@ function flagStopwatch(){
     timeFlag.style.display = 'flex';
 }
 
+/* Funcionamento dos botões */
 btnPlay.addEventListener('click', () => {
     const iconBtn = document.getElementById('toggle-play');
     if (isRunning) {
