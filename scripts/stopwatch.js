@@ -60,6 +60,13 @@ function stopStopwatch() {
 
 /* reseta o relógio para 0 */
 function resetStopwatch() {
+    /* reseta o botão play/pause */
+    const iconBtn = document.getElementById('toggle-play');
+    if (isRunning) {
+        iconBtn.src = 'src/assets/play.svg';
+    }
+    
+    /* reseta o contador do cronometro */
     stopStopwatch();
     miliSeconds = 0;
     seconds = 0;
