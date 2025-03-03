@@ -15,7 +15,7 @@ let isRunning = false;
 /* formata o tempo para que seja exibido de forma correta no display
     mesmo se for menor que 10 */
 function formatTime(time) {
-    return time < 10 ? `0${time}` : time;
+    return time.toString().padStart(2, '0');
 }
 
 /* atualiza o display do relógio */
