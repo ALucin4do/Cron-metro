@@ -102,7 +102,7 @@ section .group-btn button img{
 
 
 #timer .circle input{
-
+    width: 42px;
     background-color: transparent;
     border: none;
     color: var(--watch-numbers);
@@ -110,18 +110,17 @@ section .group-btn button img{
     text-align: center;
     cursor: text;
     outline: none;
-    padding: 1rem;
-    text-shadow: 0 0 10px var(--watch-numbers), 0 0 20px var(--watch-numbers);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 0.05) inset;
     border-radius: 5px;
-    transition: box-shadow 0.3s ease, transform 0.2s ease; 
+    transition: box-shadow 300ms ease, transform 0.2s ease; 
     
-    &::-webkit-calendar-picker-indicator {
-        display: none;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
         -webkit-appearance: none;
+        margin: 0;
     }
 
-   
+
     &:hover{
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 0 25px rgba(255, 255, 255, 0.1) inset;
         transform: scale(1.05);
@@ -132,7 +131,10 @@ section .group-btn button img{
     }
 }
 
-
+#timer .circle p{
+    color: var(--watch-numbers);
+    padding: 1rem;
+}
 
 #time-flag {
     position: absolute;
