@@ -11,6 +11,23 @@ const timeFlagTimer = document.getElementById('time-flag');
 let intervalTimer; /* vai armazenar ID gerado pelo setInterval */ 
 let isRunningTimer = false;
 
+/* impede que o usuário digite letras ou valores maiores que 59 */
+function validateInput(input) {
+    input.value = input.value.replace(/[^0-9]/g, '');
+    if (parseInt(input.value) > 59) {
+        input.value = '59';
+    }
+    if (input.value.length > 2){
+        input.value = input.value.slice(0,2);
+    }
+
+}
+
+timerHours.addEventListener('input', () => validateInput(timerHours));
+timerMinutes.addEventListener('input', () => validateInput(timerMinutes));
+timerSeconds.addEventListener('input', () => validateInput(timerSeconds));
+
+
 /* atualiza o valor dos inputs diminuindo 1 valor a cada 1000 milisegungos */
 function startTimer() {
     if (!isRunningTimer) {
@@ -55,10 +72,16 @@ function stopTimer() {
 
 /* reseta o timer para 0 */
 function resetTimer() {
+    /* reseta o botão play/pause */
+    const iconBtn = document.getElementById('toggle-play-timer');
+    if (isRunningTimer) {
+        iconBtn.src = 'src/assets/play.svg';
+    }
+
     stopTimer();
-    timerHours.value = '00';
-    timerMinutes.value = '00';
-    timerSeconds.value = '00';
+    timerHours.value = '';
+    timerMinutes.value = '';
+    timerSeconds.value = '';
     timeFlagTimer.style.display = 'none';
     timeFlagTimer.innerHTML = '';
 }
@@ -80,6 +103,16 @@ function flagTimer() {
 }
 
 /* funcionamento dos botões */
-btnPlayTimer.addEventListener('click', startTimer);
+btnPlayTimer.addEventListener('click', () => {
+    const iconBtn = document.getElementById('toggle-play-timer');
+    if (isRunningTimer) {
+        iconBtn.src = 'src/assets/play.svg';
+        stopTimer();
+    } else {
+        iconBtn.src = 'src/assets/pause.svg';
+        startTimer();
+    }
+});
+
 btnResetTimer.addEventListener('click', resetTimer);
 btnFlagTimer.addEventListener('click', flagTimer);
