@@ -5,11 +5,7 @@ body{
 }
 
 main{
-    padding: 5rem 10rem;
-}
-
-#stopwatch{
-    display: flex;
+    padding: 4rem 10rem;
 }
 
 section{
@@ -183,6 +179,7 @@ section .group-btn button img{
 #time-flag p{
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
     transition: transform 0.2s ease;
+    font-size: 1.6rem;
 
     &:hover{
         transform: scale(1.05) ;

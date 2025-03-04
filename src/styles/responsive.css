@@ -14,9 +14,92 @@
 
 }
 
-@media screen and (max-width: 768px){
-    body{
-        overflow-y: scroll;
-        height: auto;
+@media screen and (max-width: 768px){  
+
+    header{
+        justify-content: center;
+    }
+
+    main>a{
+        background-color: var(--button-portfolio);
+        color: #f3cadc;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all 300ms;
+        outline: none;
+        font-family: var(--portifolio-font);
+        font-size: 2rem;
+        position: absolute;
+        right: 40px;
+        bottom: 20px;
+
+        &:hover, &:focus{
+            transform: translate(5px, -1px);
+            box-shadow: -3px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    aside#sidebar-theme{
+        right: -235px;
+    }
+
+    #time-flag {
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        font-size: 1.2rem;
+    }
+
+    #time-flag {
+        left: 35px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    :root{
+        font-size: 40%;
+    }
+
+    header nav ul{
+        gap: 2rem;
+    }
+
+    main{
+        padding: 2rem 2rem;
+    }
+
+    section .circle{
+        --circle-size: 200px;
+    }
+
+    #time-flag {
+        position: static;
+        max-height: 100px; 
+        margin-top: 20px;
+        width: 25%;
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    header nav ul{
+        flex-direction: column;
+    }
+
+    header nav ul li button{
+        padding: 0.5rem;
+    }
+
+    main>a{
+        right: 10px;
+    }
+
+    #time-flag {
+        width: 35%;
+        margin-left: 30%;
     }
 }

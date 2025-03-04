@@ -19,26 +19,19 @@ btnThemes.forEach((btn, index) => {
 });
 
 
-/* media queries */
+/* para dispositivos menores que 768px */
 
+const portifolio = document.querySelector('header a');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
-const header = document.querySelector('header');
-const sections = document.querySelector('header nav ul');
 
 function handleMediaQueryChange(event) {
     if (event.matches) {
-        /* metodo para mover o header de lugar no html */
-        header.style.flexDirection = 'column';
-        sections.style.flexDirection = 'column';
-    }
-    else {
-        header.style.flexDirection = 'row';
-        sections.style.flexDirection = 'row';
-        
+        document.querySelector('main').appendChild(portifolio);
+    } else {
+        document.querySelector('header').appendChild(portifolio);
+
     }
 }
 
-mediaQuery.addListener(handleMediaQueryChange);
+mediaQuery.addEventListener('change', handleMediaQueryChange);
 handleMediaQueryChange(mediaQuery);
-
-
