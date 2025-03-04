@@ -15,10 +15,10 @@ aside h2{
     display: block;
     font-weight: 700;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.9);
     margin: 10px;
     padding: 10px 20px;
     font-size: 1.5em;
+    color: #ddf8f5;
 }
 
 aside h2 img{
@@ -49,6 +49,7 @@ aside >button{
 aside >button img{
     width: 30px;
     height: 30px;
+
 }
 
 aside ul{
@@ -78,4 +79,28 @@ aside ul li{
 aside ul li .btn-theme{
     width: 60px;
     margin-right: 20px;
+}
+
+aside ul li #theme1{
+    background: linear-gradient(45deg, var(--Watch-border-theme1), var(--title-theme1));
+}
+
+aside ul li #theme2{
+    background: linear-gradient(45deg, var(--Watch-border-theme2), var(--title-theme2));
+}
+
+aside ul li #theme3{
+    background: linear-gradient(45deg, var(--Watch-border-theme3), var(--title-theme3));
+}
+
+aside ul li #theme4{
+    background: linear-gradient(45deg, var(--Watch-border-theme4), var(--title-theme4));
+}
+
+aside ul li #theme5{
+    background: linear-gradient(45deg, var(--Watch-border-theme5), var(--title-theme5));
+}
+
+aside ul li #theme6{
+    background: linear-gradient(45deg, var(--Watch-border-theme6), var(--title-theme6));
 }

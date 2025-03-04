@@ -60,7 +60,7 @@ header nav ul button img{
 }
 
 header>a{
-    background-color:#d61e92;
+    background-color: var(--button-portfolio);
     color: #f3cadc;
     padding: 1rem 2rem;
     border-radius: .5rem;

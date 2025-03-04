@@ -20,60 +20,58 @@
 /* temas */
 
     /* tema 1 */
-    --bg-theme1 : #0e0c14;
-    --header-theme1 : #3A0CA3;
-    --header-text-theme1 : #ddf8f5;
-    --header-active-theme1 : #05F2D2;
-
-    --watch-bg-theme1 : #242E4E;
+    --title-theme1 : #4cc9f0;
     --Watch-border-theme1 : #F72585;
     --watch-numbers-theme1 : #ffd500;
-
-    --button-bg-theme1 : #7209b7;
-    --button-text-theme1 : #4cc9f0;
+    --button-bg-theme1 : #F72585;
+     
     /* tema 2 */
-    --theme2: #f0f0f0;
-    --text-theme2: #333;
-    --border-theme2: #ccc;
-    
-    --theme3: #e0e0e0;
-    --text-theme3: #333;
-    --border-theme3: #ccc;
-    
-    --theme4: #d0d0d0;
-    --text-theme4: #333;
-    --border-theme4: #ccc;
-    
-    --theme5: #c0c0c0;
-    --text-theme5: #333;
-    --border-theme5: #ccc;
+    --title-theme2 : #00b4d8;
+    --Watch-border-theme2 : #3A0CA3;
+    --watch-numbers-theme2 : #caf0f8;
+    --button-bg-theme2 : #0077b6;
 
-    --theme6: #b0b0b0;
-    --text-theme6: #333;
-    --border-theme6: #ccc;
+    /* tema 3 */
+    --title-theme3 : #ff758f;
+    --Watch-border-theme3 : #ff4d6d;
+    --watch-numbers-theme3 : #ffc8dd;
+    --button-bg-theme3 : #ff4d6d;
 
-    --theme7: #a0a0a0;
-    --text-theme7: #333;
-    --border-theme7: #ccc;
+    /* tema 4 */
+    --title-theme4 : #009975;
+    --Watch-border-theme4 : #00c698;
+    --watch-numbers-theme4 : #90e0ef;
+    --button-bg-theme4 : #00c698;
 
-    --theme8: #909090;
-    --text-theme8: #333;
-    --border-theme8: #ccc;
+    /* tema 5 */
+    --title-theme5 : #ffbf69;
+    --Watch-border-theme5 : #ff9f1c;
+    --watch-numbers-theme5 : #ffe5b4;
+    --button-bg-theme5 : #ff9f1c;
 
-/* atribuição do tema incial */
-    --bg : var(--bg-theme1);
-    --header : var(--header-theme1);
-    --header-text : var(--header-text-theme1);
-    --header-active : var(--header-active-theme1);
+    /* tema 6 */
+    --title-theme6 : #9a8c98;
+    --Watch-border-theme6 : #6a4c93;
+    --watch-numbers-theme6 : #c9c1d3;
+    --button-bg-theme6 : #6a4c93;
 
-    --watch-bg : var(--watch-bg-theme1);
+
+/* cores estáticas */
+    --bg : #0e0c14;
+    --header :#242E4E;
+    --header-text : #ddf8f5;
+    --header-active : #05F2D2;
+    --button-portfolio : #7209b7; 
+    --button-text : #4cc9f0;
+    --watch-bg :#242E4E;
+
+/* cores dinâmicas */
+    --title-theme : var(--title-theme1);
     --Watch-border : var(--Watch-border-theme1);
     --watch-numbers: var(--watch-numbers-theme1);
-
     --button-bg : var(--button-bg-theme1);
-    --button-text : var(--button-text-theme1);
-
 }
+
 
 body{
     height: 100vh;

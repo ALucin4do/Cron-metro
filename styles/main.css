@@ -25,8 +25,8 @@ section{
 section h1{
     font-size: 2em ;
     text-align: center;
-    color: var(--Watch-border);
-    /* text-shadow: 0 0 10px var(--Watch-border), 0 0 20px var(--button-text); */
+    color: var(--title-theme);
+    text-shadow: 0 0 10px var(--title-theme), 0 0 20px var(--title-theme);
 }
 
 section .circle{
@@ -47,7 +47,7 @@ section .circle{
         width: calc(var(--circle-size) + 15px);
         height: calc(var(--circle-size) + 15px);
         z-index: -1;
-        background: linear-gradient(45deg, var(--Watch-border), var(--button-text));
+        background: linear-gradient(45deg, var(--Watch-border), var(--title-theme));
         animation: rotateGlowBorder 5s linear infinite;
     }
 
@@ -113,6 +113,7 @@ section .group-btn button img{
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 0.05) inset;
     border-radius: 5px;
     transition: box-shadow 300ms ease, transform 0.2s ease; 
+;
     
     &::-webkit-inner-spin-button,
     &::-webkit-outer-spin-button {
