@@ -1,5 +1,7 @@
 body{
     background:linear-gradient(45deg, var(--header), var(--bg));
+    display: flex;
+    flex-direction: column;
 }
 
 main{
@@ -24,13 +26,14 @@ section{
 
 section h1{
     font-size: 2em ;
+    font-family: var(--title-font);
     text-align: center;
     color: var(--title-theme);
     text-shadow: 0 0 10px var(--title-theme), 0 0 20px var(--title-theme);
 }
 
 section .circle{
-    --circle-size: 250px;
+    --circle-size: 280px;
     position: relative;
     background-color: var(--watch-bg);
     width: var(--circle-size);
@@ -71,6 +74,7 @@ section .circle{
 
 section .circle span{
     color: var(--watch-numbers);
+    font-family: var(--numbers-font);
     cursor:text;
     text-shadow: 0 0 10px var(--watch-numbers), 0 0 20px var(--watch-numbers);
 }
@@ -139,7 +143,7 @@ section .group-btn button img{
 
 #time-flag {
     position: absolute;
-    left: 300px;
+    left: 250px;
     top: 300px;
     display: none;
     flex-direction: column;

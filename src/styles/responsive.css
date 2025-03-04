@@ -1,0 +1,22 @@
+@media screen and (max-width: 964px) {
+    :root{
+        font-size: 50%;
+    }
+    main{
+        padding: 5rem 5rem;
+    }
+    section .group-btn{
+        gap: 2rem;
+    }
+    #time-flag {
+        left: 100px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-y: scroll;
+        height: auto;
+    }
+}

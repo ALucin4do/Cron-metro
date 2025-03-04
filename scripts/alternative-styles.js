@@ -17,3 +17,28 @@ btnThemes.forEach((btn, index) => {
         root.style.setProperty('--button-bg', `var(--button-bg-theme${index + 1})`);
     });
 });
+
+
+/* media queries */
+
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+const header = document.querySelector('header');
+const sections = document.querySelector('header nav ul');
+
+function handleMediaQueryChange(event) {
+    if (event.matches) {
+        /* metodo para mover o header de lugar no html */
+        header.style.flexDirection = 'column';
+        sections.style.flexDirection = 'column';
+    }
+    else {
+        header.style.flexDirection = 'row';
+        sections.style.flexDirection = 'row';
+        
+    }
+}
+
+mediaQuery.addListener(handleMediaQueryChange);
+handleMediaQueryChange(mediaQuery);
+
+

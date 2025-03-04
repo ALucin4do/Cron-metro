@@ -56,8 +56,18 @@ img{
     width: 100%;
 	height: 100%;
 	z-index: 1;
-
 }
+
+/* Media Queries 
+small-mobile: 320px;
+mobile: 480px;
+small-tablet: 600px;
+tablet: 768px;
+large-tablet: 964px;
+laptop: 1024px;
+desktop: 1280px;
+large-desktop: 1440px; 
+*/
 
 
 
