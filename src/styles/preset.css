@@ -101,9 +101,6 @@ button{
         outline: none;
     }
 
-   
-
-
     &:disabled{
         background-color: darkslategray;
         color: whitesmoke;

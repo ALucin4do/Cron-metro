@@ -28,6 +28,14 @@ function sidebarToggle() {
 const toggleSidebar = document.getElementById('toggle-sidebar');
 toggleSidebar.addEventListener('click', sidebarToggle);
 
+/* para que a sidebar seja fechada quando o usuário clicar fora dela */
+document.addEventListener('click', (event) => {
+    const sidebar = document.getElementById('sidebar-theme');
+    const toggleSidebar = document.getElementById('toggle-sidebar');
+    if (!sidebar.contains(event.target) && !toggleSidebar.contains(event.target)) {
+        sidebar.style.right = '-250px';
+    }
+});
 
 /* seleciona qual seção da página será mostrada baseado em qual elemento da sidebar foi clicado */
 const stopwatch = document.getElementById('stopwatch');
