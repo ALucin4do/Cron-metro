@@ -1,4 +1,4 @@
-# Cronômetro
+# Digital Web Watch
 
 ![Captura de tela 2](/src/screenshots/captura%20de%20tela%201.png)
 ![Captura de tela 3](/src/screenshots/captura%20de%20tela%202.png)
@@ -18,7 +18,7 @@ Este é um projeto de um site de relógio digital com três funcionalidades prin
 
 ## Site
 
-
+https://digital-web-watch.vercel.app
 
 ## Tecnologias Utilizadas
 
