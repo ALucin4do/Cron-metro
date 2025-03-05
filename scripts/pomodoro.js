@@ -5,7 +5,7 @@ const btnFlagPomodoro = document.querySelector('#pomodoro .flag');
 const timeFlagPomodoro = document.getElementById('time-flag');
 
 let secondsPomodoro = 0;
-let minutesPomodoro = 1;
+let minutesPomodoro = 25;
 let intervalPomodoro; /* vai armazenar o ID do setInterval */
 let isRunningPomodoro = false;
 let isBreakTime = false;
