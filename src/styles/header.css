@@ -69,6 +69,7 @@ header>a{
     transition: all 300ms;
     outline: none;
     font-family: var(--portifolio-font);
+    display: none
 
     &:hover, &:focus{
         transform: translate(5px, -1px);
